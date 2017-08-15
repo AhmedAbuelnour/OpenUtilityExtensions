@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Ahme Abu El-Nour</Authors>
+    <Company>Personal</Company>
+    <Description>Provide some useful extensions to make things much simplier and more readable.</Description>
+    <Copyright>NONE</Copyright>
+    <PackageProjectUrl>https://github.com/A7medRamadan/OpenUtilityExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/A7medRamadan/OpenUtilityExtensions</RepositoryUrl>
+    <PackageTags>Extensions, ASP.NET, Windows Classic Applications, Xamarin</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="JsonNet\**" />
+    <EmbeddedResource Remove="JsonNet\**" />
+    <None Remove="JsonNet\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
